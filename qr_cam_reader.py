@@ -8,8 +8,7 @@ detector = cv2.QRCodeDetector()
 
 while True:
 
-    # Capture the video frame
-    # by frame
+    # Capture the video frame by frame
     ret, frame = vid.read()
 
     data, bbox, straight_qrcode = detector.detectAndDecode(frame)
